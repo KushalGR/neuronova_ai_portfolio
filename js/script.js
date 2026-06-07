@@ -56,7 +56,7 @@ function validateForm() {
     // Success Message 
 
     alert(
-        "Thank you for signing up to the NeuroNova AI Newsletter!"
+        "Thank you for signing up to the NeuroNova AI"
     );
 
     return true;
