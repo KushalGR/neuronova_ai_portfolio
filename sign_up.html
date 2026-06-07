@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Newsletter Signup Page -->
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Website -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>NeuroNova AI | Newsletter Signup</title>
+
+    <!-- Website Description -->
+    <meta name="description"
+        content="signup form for NeuroNova AI portfolio website.">
+
+    <!-- Main Website CSS -->
+    <link rel="stylesheet"
+        href="./css/styles.css">
+
+    <!-- Signup Page CSS -->
+    <link rel="stylesheet"
+        href="./css/signup.css">
+
+    <!-- External JavaScript File -->
+    <script src="./js/script.js"
+        defer></script>
+
+    <!-- Website Favicon -->
+    <link rel="icon"
+        type="image/png"
+        href="./img/logo.png">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+
+        <div class="logo-container">
+
+            <!-- Website Logo -->
+            <img src="./img/logo.png"
+                alt="NeuroNova AI Logo"
+                class="logo">
+
+            <!-- Website Heading -->
+            <div class="header-text">
+
+                <h1>Sign Up</h1>
+
+                <p class="tagline">
+
+                    Join the NeuroNova AI Community
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Navigation Menu -->
+     <nav>
+
+        <ul>
+
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="./kgurung_A4_about.html">About</a>
+            </li>
+
+            <li>
+                <a href="./kgurung_A4_resume.html">Resume</a>
+            </li>
+
+            <li>
+                <a href="./kgurung_A4_web_skills.html">Web Skills</a>
+            </li>
+
+            <li> 
+                <a href="./communication.html"> Communication </a>
+             </li> 
+            <li> 
+                <a href="./problem_solving.html"> Problem Solving </a> 
+            </li> 
+            <li> 
+                <a href="./teamwork.html"> Teamwork </a> 
+            </li>
+             <li>
+                <a href="./sign_up.html">
+                    Signup
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Signup Form Section -->
+        <section>
+
+            <h2>
+
+                Subscribe for NeuroNova AI Updates
+
+            </h2>
+
+            <!-- Required Information -->
+            <p class="required-text">
+
+                Fields marked with * are required.
+
+            </p>
+
+            <!-- Newsletter Signup Form -->
+            <form name="signupForm"
+                method="post"
+                action="./index.html"
+                onsubmit="return validateForm()">
+
+                <!-- First Name -->
+                <label for="fname">
+
+                    First Name *
+
+                </label>
+
+                <input type="text"
+                    id="fname"
+                    name="fname"
+                    maxlength="60"
+                    placeholder="Enter your first name">
+
+                <!-- Last Name -->
+                <label for="lname">
+
+                    Last Name *
+
+                </label>
+
+                <input type="text"
+                    id="lname"
+                    name="lname"
+                    maxlength="60"
+                    placeholder="Enter your last name">
+
+                <!-- Email Address -->
+                <label for="email">
+
+                    Email Address
+
+                </label>
+
+                <input type="email"
+                    id="email"
+                    name="email"
+                    maxlength="60"
+                    placeholder="Enter your email address">
+
+                <!-- Age Range -->
+                <h3>
+
+                    Select Your Age Range
+
+                </h3>
+
+                <input type="radio"
+                    id="age1"
+                    name="age"
+                    value="15-25">
+
+                <label for="age1">
+
+                    15-25
+
+                </label>
+
+                <br>
+
+                <input type="radio"
+                    id="age2"
+                    name="age"
+                    value="26-35">
+
+                <label for="age2">
+
+                    26-35
+
+                </label>
+
+                <br>
+
+                <input type="radio"
+                    id="age3"
+                    name="age"
+                    value="36-45">
+
+                <label for="age3">
+
+                    36-45
+
+                </label>
+
+                <br>
+
+                <input type="radio"
+                    id="age4"
+                    name="age"
+                    value="46-55">
+
+                <label for="age4">
+
+                    46-55
+
+                </label>
+
+                <br>
+
+                <input type="radio"
+                    id="age5"
+                    name="age"
+                    value="55+">
+
+                <label for="age5">
+
+                    55+
+
+                </label>
+
+                <!-- Areas of Interest -->
+                <h3>
+
+                    Select Areas of Interest
+
+                </h3>
+
+                <input type="checkbox"
+                    id="service1"
+                    name="services"
+                    value="Web Development">
+
+                <label for="service1">
+
+                    Web Development
+
+                </label>
+
+                <br>
+
+                <input type="checkbox"
+                    id="service2"
+                    name="services"
+                    value="Artificial Intelligence">
+
+                <label for="service2">
+
+                    Artificial Intelligence
+
+                </label>
+
+                <br>
+
+                <input type="checkbox"
+                    id="service3"
+                    name="services"
+                    value="Cyber Security">
+
+                <label for="service3">
+
+                    Cyber Security
+
+                </label>
+
+                <br>
+
+                <input type="checkbox"
+                    id="service4"
+                    name="services"
+                    value="Cloud Computing">
+
+                <label for="service4">
+
+                    Cloud Computing
+
+                </label>
+
+                <br>
+
+                <input type="checkbox"
+                    id="service5"
+                    name="services"
+                    value="Software Development">
+
+                <label for="service5">
+
+                    Software Development
+
+                </label>
+
+                <!-- Additional Comments -->
+                <label for="comments">
+
+                    Additional Comments
+
+                </label>
+
+                <textarea id="comments"
+                    name="comments"
+                    cols="60"
+                    rows="3"
+                    placeholder="Enter your comments here"></textarea>
+
+                <!-- Submit Button -->
+                <input type="submit"
+                    value="Submit">
+
+                <!-- Reset Button -->
+                <input type="reset"
+                    value="Reset">
+
+            </form>
+
+        </section>
+
+        <!-- Return Section -->
+        <section>
+
+            <h2>
+
+                Return to Website
+
+            </h2>
+
+            <p>
+
+                Return to the
+                <a href="./index.html">
+
+                    Home Page
+
+                </a>
+
+                to continue exploring NeuroNova AI.
+
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+
+        <!-- Contact Information -->
+        <div class="footer-section">
+
+            <h3>
+
+                Contact Information
+
+            </h3>
+
+            <ul>
+
+                <li>
+
+                    Mobile:
+                    <a href="tel:0450369024">
+
+                        0450 369 024
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    Email:
+                    <a href="mailto:kushalgurung556@gmail.com">
+
+                        kushalgurung556@gmail.com
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Address Section -->
+        <div class="footer-section">
+
+            <h3>
+
+                Address
+
+            </h3>
+
+            <address>
+
+                19 Oswald Street,<br>
+                NSW, Australia
+
+            </address>
+
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+
+            <h3>
+
+                Connect With Me
+
+            </h3>
+
+            <ul>
+
+                <li>
+
+                    <a href="https://www.facebook.com/"
+                        target="_blank">
+
+                        Facebook
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="https://www.instagram.com/"
+                        target="_blank">
+
+                        Instagram
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+
+            <p>
+
+                &copy; 2026 Kushal Gurung.
+                All rights reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+
